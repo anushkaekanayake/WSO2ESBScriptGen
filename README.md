@@ -4,13 +4,14 @@ Automating tool for generating ESB script mediator (.js) which requires when con
 
 1. First need to get soap request and select the required soap body section
 2. Annotate soap request with the given annotations
+3. Place SOAP request and their tags in a well formatted manner (refer Sample)
 
 <b>Annotations</b>
 <table>
 <thead><th>Annotation</th><th>Description</th><th>Using Location</th></thead>
 <tbody>
 <tr><td width="150px">&lt;!--optional--&gt;</td><td>Uses to annotate an optiona property</td><td>Upper line to the tag</td></tr>
-<tr><td> &lt;!--loop--&gt;</td><td>Uses to annotate a repeating object</td><td>Upper line to the starting tag of the repeating object. (refer sample)</td></tr>
+<tr><td> &lt;!--loop--&gt;</td><td>Uses to annotate a repeating object</td><td>Upper line to the starting tag of the repeating object.(ex:Zero or more repetitions) (refer sample)</td></tr>
 <tr><td> &lt;!--end--&gt;</td><td>Uses to annotate the ending of the repeating object</td><td>Bellowing Line of the ending tag of the repeating Object</td></tr>
 </tbody>
 </table>
