@@ -49,53 +49,53 @@ Automating tool for generating ESB script mediator (.js) which requires when con
 <b>Sample OutPut - Generated js code for script mediator for POST or PUT type REST API</b>
 ```
 var requestObj = mc.getPayloadJSON();
-var request=&quot;&lt;api&gt;&quot;;
-request=request+&quot;&lt;header&gt;&quot;;
-if(typeof(requestObj.api.header.id)!=&quot;undefined&quot;){
-request=request+&quot;&lt;id&gt;&quot;+requestObj.api.header.id+&quot;&lt;/id&gt;&quot;;
+var request="<api>";
+request=request+"<header>";
+if(typeof(requestObj.api.header.id)!="undefined"){
+request=request+"<id>"+requestObj.api.header.id+"</id>";
 }
-if(typeof(requestObj.api.header.version)!=&quot;undefined&quot;){
-request=request+&quot;&lt;version&gt;&quot;+requestObj.api.header.version+&quot;&lt;/version&gt;&quot;;
+if(typeof(requestObj.api.header.version)!="undefined"){
+request=request+"<version>"+requestObj.api.header.version+"</version>";
 }
-request=request+&quot;&lt;/header&gt;&quot;;
-if(typeof(requestObj.api.name)!=&quot;undefined&quot;){
-request=request+&quot;&lt;name&gt;&quot;+requestObj.api.name+&quot;&lt;/name&gt;&quot;;
+request=request+"</header>";
+if(typeof(requestObj.api.name)!="undefined"){
+request=request+"<name>"+requestObj.api.name+"</name>";
 }
-if(typeof(requestObj.api.age)!=&quot;undefined&quot;){
-request=request+&quot;&lt;age&gt;&quot;+requestObj.api.age+&quot;&lt;/age&gt;&quot;;
+if(typeof(requestObj.api.age)!="undefined"){
+request=request+"<age>"+requestObj.api.age+"</age>";
 }
-if (typeof (requestObj.api.tp) != &quot;undefined&quot;) {
- for ( var index = 0; index &lt; requestObj.api.tp.length; index++) {
-request=request+&quot;&lt;tp&gt;&quot;;
-if(typeof(requestObj.api.tp[index].no)!=&quot;undefined&quot;){
-request=request+&quot;&lt;no&gt;&quot;+requestObj.api.tp[index].no+&quot;&lt;/no&gt;&quot;;
+if (typeof (requestObj.api.tp) != "undefined") {
+ for ( var index = 0; index < requestObj.api.tp.length; index++) {
+request=request+"<tp>";
+if(typeof(requestObj.api.tp[index].no)!="undefined"){
+request=request+"<no>"+requestObj.api.tp[index].no+"</no>";
 }
-request= request + &quot;&lt;/tp&gt;&quot;;
-}
-}
-request=request+&quot;&lt;obj&gt;&quot;;
-request=request+&quot;&lt;aaa&gt;&quot;;
-if(typeof(requestObj.api.obj.aaa.aa1)!=&quot;undefined&quot;){
-request=request+&quot;&lt;aa1&gt;&quot;+requestObj.api.obj.aaa.aa1+&quot;&lt;/aa1&gt;&quot;;
-}
-if(typeof(requestObj.api.obj.aaa.aa2)!=&quot;undefined&quot;){
-request=request+&quot;&lt;aa2&gt;&quot;+requestObj.api.obj.aaa.aa2+&quot;&lt;/aa2&gt;&quot;;
-}
-if (typeof (requestObj.api.obj.aaa.aa3) != &quot;undefined&quot;) {
- for ( var index = 0; index &lt; requestObj.api.obj.aaa.aa3.length; index++) {
-request=request+&quot;&lt;aa3&gt;&quot;;
-if(typeof(requestObj.api.obj.aaa.aa3[index].id)!=&quot;undefined&quot;){
-request=request+&quot;&lt;id&gt;&quot;+requestObj.api.obj.aaa.aa3[index].id+&quot;&lt;/id&gt;&quot;;
-}
-request= request + &quot;&lt;/aa3&gt;&quot;;
+request= request + "</tp>";
 }
 }
-request=request+&quot;&lt;/aaa&gt;&quot;;
-if(typeof(requestObj.api.obj.bbb)!=&quot;undefined&quot;){
-request=request+&quot;&lt;bbb&gt;&quot;+requestObj.api.obj.bbb+&quot;&lt;/bbb&gt;&quot;;
+request=request+"<obj>";
+request=request+"<aaa>";
+if(typeof(requestObj.api.obj.aaa.aa1)!="undefined"){
+request=request+"<aa1>"+requestObj.api.obj.aaa.aa1+"</aa1>";
 }
-request=request+&quot;&lt;/obj&gt;&quot;;
-request=request+&quot;&lt;/api&gt;&quot;;
+if(typeof(requestObj.api.obj.aaa.aa2)!="undefined"){
+request=request+"<aa2>"+requestObj.api.obj.aaa.aa2+"</aa2>";
+}
+if (typeof (requestObj.api.obj.aaa.aa3) != "undefined") {
+ for ( var index = 0; index < requestObj.api.obj.aaa.aa3.length; index++) {
+request=request+"<aa3>";
+if(typeof(requestObj.api.obj.aaa.aa3[index].id)!="undefined"){
+request=request+"<id>"+requestObj.api.obj.aaa.aa3[index].id+"</id>";
+}
+request= request + "</aa3>";
+}
+}
+request=request+"</aaa>";
+if(typeof(requestObj.api.obj.bbb)!="undefined"){
+request=request+"<bbb>"+requestObj.api.obj.bbb+"</bbb>";
+}
+request=request+"</obj>";
+request=request+"</api>";
 mc.setPayloadXML(new XML(request));
 ```
 
