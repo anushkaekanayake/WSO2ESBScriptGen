@@ -9,9 +9,9 @@ Automating tool for generating ESB script mediator (.js) which requires when con
 <table>
 <thead><th>Annotation</th><th>Description</th><th>Using Location</th></thead>
 <tbody>
-<tr><td>&lt;!--optional--&gt;</td><td>Uses to annotate an optiona property</td><td>Upper line to the tag</td></tr>
-<tr><td>&lt;!--loop--&gt;</td><td>Uses to annotate a repeating object</td><td>Upper line to the starting tag of the repeating object. (refer sample)</td></tr>
-<tr><td>&lt;!--end--&gt;</td><td>Uses to annotate the ending of the repeating object</td><td>Bellowing Line of the ending tag of the repeating Object</td></tr>
+<tr><td width="150px">&lt;!--optional--&gt;</td><td>Uses to annotate an optiona property</td><td>Upper line to the tag</td></tr>
+<tr><td> &lt;!--loop--&gt;</td><td>Uses to annotate a repeating object</td><td>Upper line to the starting tag of the repeating object. (refer sample)</td></tr>
+<tr><td> &lt;!--end--&gt;</td><td>Uses to annotate the ending of the repeating object</td><td>Bellowing Line of the ending tag of the repeating Object</td></tr>
 </tbody>
 </table>
 
