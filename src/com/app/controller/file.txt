@@ -1,4 +1,0 @@
-<root>
-<header>
-</header>
-</root>
