@@ -1,0 +1,28 @@
+<api>
+	<header>
+		<id>?</id>
+		<!--optional-->
+		<version>?</version>
+	</header>
+	<name>?</name>
+	<age>?</age>
+	<!--loop-->
+	<tp>
+		<no>?</no>
+	</tp>
+	<!--end-->
+	<obj>
+		<!--optional-->
+		<aaa>
+			<aa1>?</aa1>
+			<!--optional-->
+			<aa2>?</aa2>
+			<!--loop-->
+			<aa3>
+				<id>?</id>
+			</aa3>
+			<!--end-->
+		</aaa>
+		<bbb>?</bbb>
+	</obj>
+</api>
